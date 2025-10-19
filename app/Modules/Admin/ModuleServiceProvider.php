@@ -1,6 +1,6 @@
 <?php
 
-namespace Codemonster\Xen\Modules\Pages;
+namespace Codemonster\Xen\Modules\Admin;
 
 use Codemonster\Annabel\Providers\ServiceProvider;
 
@@ -8,6 +8,6 @@ class ModuleServiceProvider extends ServiceProvider
 {
     public function boot(): void
     {
-        view()->addNamespace('pages', __DIR__ . '/Views');
+        view()->addNamespace('admin', __DIR__ . '/Views');
     }
 }
